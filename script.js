@@ -117,7 +117,7 @@ $(window).keydown(function random(e){
   }
   if(e.keyCode === 32 && selector === 5){
     var uranus = function(){
-      var uranus = $('<img class="uranus" style="width:60px" src="img/6.png" />');
+      var uranus = $('<img class="uranus" style="width:60px" src="img/5.png" />');
 
       $('.foreground').append(uranus);
 
