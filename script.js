@@ -90,6 +90,7 @@ $(window).keydown(function random(e){
         t += 0.01;
       }, 16);
     };
+    venus();
   }
   if(e.keyCode === 32 && selector === 4){
     var comet = function(){
@@ -112,6 +113,7 @@ $(window).keydown(function random(e){
         t += 0.01;
       }, 16);
     };
+    comet();
   }
   if(e.keyCode === 32 && selector === 5){
     var uranus = function(){
@@ -135,6 +137,7 @@ $(window).keydown(function random(e){
         t += 0.01;
       }, 16);
     };
+    uranus();
   }
 });
 
