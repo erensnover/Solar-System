@@ -26,6 +26,6 @@ body {
 }
 
 /* PLANET STUFF */
-.earth, .sun, .star, .mercury, .blue1, .moon {
+.earth, .sun, .star, .mercury, .uranus, .venus, .comet {
   position: absolute;
 }

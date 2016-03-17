@@ -28,7 +28,7 @@ $(window).keydown(function random(e){
 
       var sunWidth = $sun.width();
       var t = 0;
-      var dist = 200;
+      var dist = Math.ceil(Math.random() * 400);
 
       setInterval(function() {
         var width = earth.width();
@@ -41,9 +41,100 @@ $(window).keydown(function random(e){
 
         t += 0.01;
       }, 16);
-      //earthPosition();
     };
     earth();
+  }
+  if(e.keyCode === 32 && selector === 2){
+    var mercury = function(){
+      var mercury = $('<img class="mercury" style="width:50px" src="img/3.png" />');
+
+      $('.foreground').append(mercury);
+
+      var sunWidth = $sun.width();
+      var t = 0;
+      var dist = Math.ceil(Math.random() * 400);
+
+      setInterval(function() {
+        var width = mercury.width();
+        var height = mercury.height();
+        var windowWidth = $(window).width();
+        var windowHeight = $(window).height();
+
+        mercury.css('top', dist * Math.sin(t) - height / 2 + windowHeight / 2);
+        mercury.css('left', dist * Math.cos(t) - width / 2 + windowWidth / 2);
+
+        t += 0.01;
+      }, 16);
+    };
+    mercury();
+  }
+  if(e.keyCode === 32 && selector === 3){
+    var venus = function(){
+      var venus = $('<img class="venus" style="width:80px" src="img/4.png" />');
+
+      $('.foreground').append(venus);
+
+      var sunWidth = $sun.width();
+      var t = 0;
+      var dist = Math.ceil(Math.random() * 400);
+
+      setInterval(function() {
+        var width = venus.width();
+        var height = venus.height();
+        var windowWidth = $(window).width();
+        var windowHeight = $(window).height();
+
+        venus.css('top', dist * Math.sin(t) - height / 2 + windowHeight / 2);
+        venus.css('left', dist * Math.cos(t) - width / 2 + windowWidth / 2);
+
+        t += 0.01;
+      }, 16);
+    };
+  }
+  if(e.keyCode === 32 && selector === 4){
+    var comet = function(){
+      var comet = $('<img class="comet" style="width:20px" src="img/1.png" />');
+
+      $('.foreground').append(comet);
+
+      var sunWidth = $sun.width();
+      var t = 0;
+      var dist = Math.ceil(Math.random() * 400);
+      setInterval(function() {
+        var width = comet.width();
+        var height = comet.height();
+        var windowWidth = $(window).width();
+        var windowHeight = $(window).height();
+
+        comet.css('top', dist * Math.sin(t) - height / 2 + windowHeight / 2);
+        comet.css('left', dist * Math.cos(t) - width / 2 + windowWidth / 2);
+
+        t += 0.01;
+      }, 16);
+    };
+  }
+  if(e.keyCode === 32 && selector === 5){
+    var uranus = function(){
+      var uranus = $('<img class="uranus" style="width:60px" src="img/6.png" />');
+
+      $('.foreground').append(uranus);
+
+      var sunWidth = $sun.width();
+      var t = 0;
+      var dist = Math.ceil(Math.random() * 400);
+
+      setInterval(function() {
+        var width = uranus.width();
+        var height = uranus.height();
+        var windowWidth = $(window).width();
+        var windowHeight = $(window).height();
+
+        uranus.css('top', dist * Math.sin(t) - height / 2 + windowHeight / 2);
+        uranus.css('left', dist * Math.cos(t) - width / 2 + windowWidth / 2);
+
+        t += 0.01;
+      }, 16);
+    };
   }
 });
 
