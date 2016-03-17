@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* BASIC SETUP */
+html {
+	font-family: Helvetica, sans-serif;
+	color:#ffffff;
+	background-color:#0e1d3b;
+
+	/* cover image */
+	background: url(img/background.png) no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/desk.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/desk.png', sizingMethod='scale')";
+}
+
+body {
+	margin: auto;
+	height: 100%;
+	width: 100%;
+}
+
+/* PLANET STUFF */
+.earth, .sun, .star, .mercury, .blue1, .moon {
+  position: absolute;
+}
